@@ -48,7 +48,7 @@
                         pythonPkgs.langchain-ollama
                         pythonPkgs.num2words
                         pythonPkgs.spacy
-                        pythonPkgs.espeakng-loader
+                        # pythonPkgs.espeakng-loader
                         pythonPkgs.misaki
                         pythonPkgs.onnxruntime
                         pythonPkgs.soundfile
