@@ -40,8 +40,8 @@
                     pkgs.git
                     pkgs.htop
                     pkgs.ripgrep
-                    pkgs.python312
-                    pkgs.python312Packages.requests
+                    pkgs.python312.withPackages (ps: [ pkgs.python312Packages.requests ])
+                    # pkgs.python312Packages.requests
                     # pkgs.python312Packages.langchain
                     # .withPackages (ps: [
                     #     # ps.requests
