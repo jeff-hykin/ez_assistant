@@ -46,22 +46,16 @@
                         pythonPkgs.langchain-community
                         pythonPkgs.duckduckgo-search
                         pythonPkgs.langchain-ollama
+                        (python.pkgs.buildPythonPackage {
+                            pname = "kittentts";
+                            version = "0.1.0";
+                            src = ./subrepos/KittenTTS;
+                            
+                            # Optional: if you have pyproject.toml, use `buildPythonPackage` with `pyproject` support
+                            format = "pyproject";
+                            nativeBuildInputs = [ pythonPkgs.setuptools ];
+                        })
                     ]))
-                    # pkgs.python312Packages.requests
-                    # pkgs.python312Packages.langchain
-                    # .withPackages (ps: [
-                    #     # ps.requests
-                    #     # ps.langchain
-                    #     # ps.langchain_community
-                    #     # ps.langchain_community
-                    #     # ps.fastapi
-                    #     # ps.pydantic
-                    #     # ps.sqlalchemy
-                    #     # ps.psycopg2
-                    #     # ps.alembic
-                    #     # ps.sqlalchemy-stubs
-                    #     # ps.pre-commit
-                    # ])
                 ];
                 
                 programs = {
