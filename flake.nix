@@ -46,6 +46,14 @@
                         pythonPkgs.langchain-community
                         pythonPkgs.duckduckgo-search
                         pythonPkgs.langchain-ollama
+                        pythonPkgs.num2words
+                        pythonPkgs.spacy
+                        pythonPkgs.espeakng-loader
+                        pythonPkgs.misaki
+                        pythonPkgs.onnxruntime
+                        pythonPkgs.soundfile
+                        pythonPkgs.numpy
+                        pythonPkgs.huggingface-hub
                         (pythonPkgs.buildPythonPackage {
                             pname = "kittentts";
                             version = "0.1.0";
