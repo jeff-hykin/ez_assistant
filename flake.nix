@@ -49,16 +49,16 @@
                         pythonPkgs.num2words
                         pythonPkgs.spacy
                         # pythonPkgs.misaki
-                        (pythonPkgs.buildPythonPackage rec {
-                            pname = "misaki";
-                            version = "0.9.4";
+                        # (pythonPkgs.buildPythonPackage rec {
+                        #     pname = "misaki";
+                        #     version = "0.9.4";
 
-                            src = pkgs.fetchPypi {
-                                inherit pname version;
-                                sha256 = "sha256-OWD6Pm3heakO6OYoRGpKT2uMcwtuNBCZnPOWGJ9NnEA=";
-                            };
-                            # format = "setuptools";
-                        })
+                        #     src = pkgs.fetchPypi {
+                        #         inherit pname version;
+                        #         sha256 = "sha256-OWD6Pm3heakO6OYoRGpKT2uMcwtuNBCZnPOWGJ9NnEA=";
+                        #     };
+                        #     # format = "setuptools";
+                        # })
                         # pythonPkgs.espeakng-loader
                         (pythonPkgs.buildPythonPackage rec {
                             pname = "espeakng-loader";
