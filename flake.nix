@@ -47,7 +47,27 @@
                         pythonPkgs.duckduckgo-search
                         pythonPkgs.langchain-ollama
                         pythonPkgs.num2words
-                        pythonPkgs.spacy
+                        pythonPkgs.spacy# Example: Fetch 'misaki' from PyPI
+                        (python.pkgs.buildPythonPackage rec {
+                            pname = "misaki";
+                            version = "0.2.3"; # use the version you need
+
+                            src = fetchPypi {
+                                inherit pname version;
+                                sha256 = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"; # Replace with real hash
+                            };
+
+                            # optional: if it uses setuptools
+                            format = "setuptools";
+                        })
+                        (python.pkgs.buildPythonPackage rec {
+                            pname = "espeakng-loader";
+                            version = "0.1.0";  # Example version
+                            src = fetchPypi {
+                                inherit pname version;
+                                sha256 = "sha256-YYYYYYYYYYYYYYYYYYYYYYYYYYYY";  # Replace with real hash
+                            };
+                        })
                         # pythonPkgs.espeakng-loader
                         # pythonPkgs.misaki
                         pythonPkgs.onnxruntime
