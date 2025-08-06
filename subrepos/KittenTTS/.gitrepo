@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:KittenML/KittenTTS.git
+	branch = main
+	commit = 79bcc5df7e2b2c91b6f1a3e259f86ae4ac911dcd
+	parent = 1a8128f0e3bcb8063045d7f79c0b455074e4df33
+	method = merge
+	cmdver = 0.4.5
