@@ -60,14 +60,14 @@
                         #     # format = "setuptools";
                         # })
                         # pythonPkgs.espeakng-loader
-                        (pythonPkgs.buildPythonPackage rec {
-                            pname = "espeakng-loader";
-                            version = "0.2.4";
-                            src = pkgs.fetchPypi {
-                                inherit pname version;
-                            };
-                            format = "setuptools";
-                        })
+                        # (pythonPkgs.buildPythonPackage rec {
+                        #     pname = "espeakng-loader";
+                        #     version = "0.2.4";
+                        #     src = pkgs.fetchPypi {
+                        #         inherit pname version;
+                        #     };
+                        #     format = "setuptools";
+                        # })
                         pythonPkgs.onnxruntime
                         pythonPkgs.soundfile
                         pythonPkgs.numpy
