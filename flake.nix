@@ -46,7 +46,7 @@
                         pythonPkgs.langchain-community
                         pythonPkgs.duckduckgo-search
                         pythonPkgs.langchain-ollama
-                        (python.pkgs.buildPythonPackage {
+                        (pythonPkgs.buildPythonPackage {
                             pname = "kittentts";
                             version = "0.1.0";
                             src = ./subrepos/KittenTTS;
