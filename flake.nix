@@ -40,6 +40,19 @@
                     pkgs.git
                     pkgs.htop
                     pkgs.ripgrep
+                    pkgs.python312.withPackages (ps: [
+                        # ps.requests
+                        # ps.langchain
+                        # ps.langchain_community
+                        # ps.langchain_community
+                        # ps.fastapi
+                        # ps.pydantic
+                        # ps.sqlalchemy
+                        # ps.psycopg2
+                        # ps.alembic
+                        # ps.sqlalchemy-stubs
+                        # ps.pre-commit
+                    ])
                 ];
                 
                 programs = {
