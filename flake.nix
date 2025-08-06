@@ -54,7 +54,7 @@
 
                             src = pkgs.fetchPypi {
                                 inherit pname version;
-                                sha256 = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"; # Replace with real hash
+                                # sha256 = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"; # Replace with real hash
                             };
 
                             # optional: if it uses setuptools
@@ -65,7 +65,7 @@
                             version = "0.1.0";  # Example version
                             src = pkgs.fetchPypi {
                                 inherit pname version;
-                                sha256 = "sha256-YYYYYYYYYYYYYYYYYYYYYYYYYYYY";  # Replace with real hash
+                                # sha256 = "sha256-YYYYYYYYYYYYYYYYYYYYYYYYYYYY";  # Replace with real hash
                             };
                         })
                         # pythonPkgs.espeakng-loader
