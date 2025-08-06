@@ -1,0 +1,1 @@
+globalThis.require = (...args)=>{throw new Error("require is not in deno! "+JSON.stringify(args), )}
