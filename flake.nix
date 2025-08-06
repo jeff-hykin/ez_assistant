@@ -49,7 +49,7 @@
                         pythonPkgs.num2words
                         pythonPkgs.spacy
                         # pythonPkgs.espeakng-loader
-                        pythonPkgs.misaki
+                        # pythonPkgs.misaki
                         pythonPkgs.onnxruntime
                         pythonPkgs.soundfile
                         pythonPkgs.numpy
