@@ -48,7 +48,7 @@
                         pythonPkgs.langchain-ollama
                         pythonPkgs.num2words
                         pythonPkgs.spacy# Example: Fetch 'misaki' from PyPI
-                        (python.pkgs.buildPythonPackage rec {
+                        (pythonPkgs.buildPythonPackage rec {
                             pname = "misaki";
                             version = "0.2.3"; # use the version you need
 
@@ -60,7 +60,7 @@
                             # optional: if it uses setuptools
                             format = "setuptools";
                         })
-                        (python.pkgs.buildPythonPackage rec {
+                        (pythonPkgs.buildPythonPackage rec {
                             pname = "espeakng-loader";
                             version = "0.1.0";  # Example version
                             src = fetchPypi {
