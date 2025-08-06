@@ -55,6 +55,7 @@
 
                             src = pkgs.fetchPypi {
                                 inherit pname version;
+                                sha256 = "sha256-OWD6Pm3heakO6OYoRGpKT2uMcwtuNBCZnPOWGJ9NnEA=";
                             };
                             format = "setuptools";
                         })
