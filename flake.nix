@@ -43,7 +43,7 @@
                     (pkgs.python312.withPackages (pythonPkgs: [
                         pythonPkgs.requests
                         pythonPkgs.langchain
-                        pythonPkgs.langchain_community
+                        pythonPkgs.langchain-community
                         pythonPkgs.duckduckgo-search
                         pythonPkgs.langchain-ollama
                     ]))
