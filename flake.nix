@@ -40,6 +40,34 @@
                     pkgs.git
                     pkgs.htop
                     pkgs.ripgrep
+                    pkgs.python312.pkgs.num2words
+                    pkgs.python312.pkgs.spacy# Example: Fetch 'misaki' from PyPI
+                    (pkgs.python312.pkgs.buildPythonPackage rec {
+                        pname = "misaki";
+                        version = "0.2.3"; # use the version you need
+
+                        src = pkgs.fetchPypi {
+                            inherit pname version;
+                            # sha256 = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"; # Replace with real hash
+                        };
+
+                        # optional: if it uses setuptools
+                        format = "setuptools";
+                    })
+                    (pkgs.python312.pkgs.buildPythonPackage rec {
+                        pname = "espeakng-loader";
+                        version = "0.1.0";  # Example version
+                        src = pkgs.fetchPypi {
+                            inherit pname version;
+                            # sha256 = "sha256-YYYYYYYYYYYYYYYYYYYYYYYYYYYY";  # Replace with real hash
+                        };
+                    })
+                    # pkgs.python312.pkgs.espeakng-loader
+                    # pkgs.python312.pkgs.misaki
+                    pkgs.python312.pkgs.onnxruntime
+                    pkgs.python312.pkgs.soundfile
+                    pkgs.python312.pkgs.numpy
+                    pkgs.python312.pkgs.huggingface-hub
                     (pkgs.python312.withPackages (pythonPkgs: [
                         pythonPkgs.requests
                         pythonPkgs.langchain
