@@ -42,6 +42,10 @@
                     pkgs.ripgrep
                     (pkgs.python312.withPackages (pythonPkgs: [
                         pythonPkgs.requests
+                        pythonPkgs.langchain
+                        pythonPkgs.langchain_community
+                        pythonPkgs.duckduckgo-search
+                        pythonPkgs.langchain-ollama
                     ]))
                     # pkgs.python312Packages.requests
                     # pkgs.python312Packages.langchain
