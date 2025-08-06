@@ -52,7 +52,7 @@
                             pname = "misaki";
                             version = "0.2.3"; # use the version you need
 
-                            src = fetchPypi {
+                            src = pkgs.fetchPypi {
                                 inherit pname version;
                                 sha256 = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"; # Replace with real hash
                             };
@@ -63,7 +63,7 @@
                         (pythonPkgs.buildPythonPackage rec {
                             pname = "espeakng-loader";
                             version = "0.1.0";  # Example version
-                            src = fetchPypi {
+                            src = pkgs.fetchPypi {
                                 inherit pname version;
                                 sha256 = "sha256-YYYYYYYYYYYYYYYYYYYYYYYYYYYY";  # Replace with real hash
                             };
